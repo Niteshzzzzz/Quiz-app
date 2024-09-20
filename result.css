@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.result{
+    height: 100%;
+    width: 100%;
+    background-color: #F6F4F0;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding-inline: 20%;
+    padding-block: 30px 15px;
+}
+.icon img{
+    height: 92px;
+    width: 222px;
+}
+.progress-bar{
+    height: 60px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF7A7A;
+    margin-block: 110px 6px;
+    position: relative;
+}
+.progress{
+    height: inherit;
+    width: 70%;
+    border: none;
+    background-color: #35BD3A;
+    border-radius: 10px;
+    position: absolute;
+}
+.green{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color:#1c9920;
+    border-radius: 50%;
+    left: 15px;
+    top: 25px; 
+}
+.green-line{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color:transparent;
+    left: -24px;
+    top: 29px;
+    border-top: 3px solid #209e24;
+    border-left: 3px solid #209e24;
+}
+.red{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color:#db4a4a;
+    border-radius: 50%;
+    right: 15px;
+    top: 25px; 
+}
+.red-line{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color:transparent;
+    right: -24px;
+    top: 29px;
+    border-top: 3px solid #db4a4a;
+    border-right: 3px solid #db4a4a;
+}
+.value{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -32px;
+    margin-right: -46px;
+}
+
+.suggetion{
+    font-size: 32px;
+    margin-top: 110px;
+
+}
+.retry{
+    display: inline-block;
+    background-color: #01AB08;
+    padding: 8px 20px;
+    text-decoration-line: none;
+    color: white;
+    margin-top: 15px;
+    border-radius: 4px;
+    font-size: 25px;
+    box-shadow: 0 2px 0px 2px #026b06;
+}
+.Share{
+    font-size: 24px;
+    color: #535353;
+    margin-top: 90px;
+}
+.share-icons{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+p{
+    font-size: 10px;
+    color: #858585;
+    margin-top: 20px;
+}
+img:hover{
+    cursor: pointer;
+}
+@media(max-width: 500px){
+    .suggetion{
+        font-size: 24px;
+        margin-top: 70px;
+    }
+    .progress-bar{
+        margin-top: 70px;
+    }
+    body{
+        padding-inline: 5%;
+    }
+}
